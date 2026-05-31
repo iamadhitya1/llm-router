@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="llm-router",
+    name="llm-dispatch",
     version="1.0.0",
     author="M Adhitya",
     description="Route prompts to the right LLM automatically. Supports Groq, OpenAI, Anthropic.",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/iamadhitya1/llm-router",
     packages=find_packages(),

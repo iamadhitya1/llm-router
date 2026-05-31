@@ -1,5 +1,6 @@
 # llm-router
 
+[![PyPI](https://img.shields.io/pypi/v/llm-dispatch.svg)](https://pypi.org/project/llm-dispatch/)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-iamadhitya1-blue?logo=github)](https://github.com/iamadhitya1)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python)
@@ -15,13 +16,13 @@ Simple prompts → fast cheap models. Complex prompts → powerful models. Autom
 ## Install
 
 ```bash
-pip install llm-router
+pip install llm-dispatch
 
 # Install provider SDKs you need:
-pip install llm-router[groq]       # Groq only
-pip install llm-router[openai]     # OpenAI only
-pip install llm-router[anthropic]  # Anthropic only
-pip install llm-router[all]        # All providers
+pip install llm-dispatch[groq]       # Groq only
+pip install llm-dispatch[openai]     # OpenAI only
+pip install llm-dispatch[anthropic]  # Anthropic only
+pip install llm-dispatch[all]        # All providers
 ```
 
 ---
