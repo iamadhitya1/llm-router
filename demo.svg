@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 268" width="520" height="268">
+<style>
+@keyframes l1{0%,4%{opacity:0}10%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l2{0%,12%{opacity:0}18%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l3{0%,20%{opacity:0}26%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l4{0%,30%{opacity:0}36%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l5{0%,40%{opacity:0}46%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l6{0%,50%{opacity:0}56%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l7{0%,60%{opacity:0}66%,80%{opacity:1}90%,100%{opacity:0}}
+@keyframes l8{0%,70%{opacity:0}76%,80%{opacity:1}90%,100%{opacity:0}}
+.l1{animation:l1 8s ease infinite}
+.l2{animation:l2 8s ease infinite}
+.l3{animation:l3 8s ease infinite}
+.l4{animation:l4 8s ease infinite}
+.l5{animation:l5 8s ease infinite}
+.l6{animation:l6 8s ease infinite}
+.l7{animation:l7 8s ease infinite}
+.l8{animation:l8 8s ease infinite}
+</style>
+
+<!-- Window -->
+<rect width="520" height="268" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<rect width="520" height="32" rx="10" fill="#21262d"/>
+<rect y="20" width="520" height="12" fill="#21262d"/>
+<circle cx="20" cy="16" r="5" fill="#ff5f57"/>
+<circle cx="38" cy="16" r="5" fill="#febc2e"/>
+<circle cx="56" cy="16" r="5" fill="#28c841"/>
+<text x="260" y="21" fill="#6e7681" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle">llm-dispatch — python3</text>
+
+<rect x="0" y="32" width="520" height="236" fill="#0d1117"/>
+<rect x="0" y="248" width="520" height="20" rx="10" fill="#0d1117"/>
+
+<!-- Line 1: import -->
+<g class="l1">
+  <text x="20" y="60" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#52B788">&gt;&gt;&gt; </text>
+  <text x="56" y="60" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#ff7b72">from </text>
+  <text x="93" y="60" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">llmrouter </text>
+  <text x="153" y="60" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#ff7b72">import </text>
+  <text x="197" y="60" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#79c0ff">LLMRouter</text>
+</g>
+
+<!-- Line 2: setup router -->
+<g class="l2">
+  <text x="20" y="80" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#52B788">&gt;&gt;&gt; </text>
+  <text x="56" y="80" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">router = (</text>
+  <text x="117" y="80" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#79c0ff">LLMRouter</text>
+  <text x="178" y="80" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">(verbose=</text>
+  <text x="244" y="80" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#79c0ff">True</text>
+  <text x="268" y="80" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">)</text>
+</g>
+
+<!-- Line 3: add fast model -->
+<g class="l3">
+  <text x="20" y="100" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#52B788">... </text>
+  <text x="44" y="100" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#d2a8ff">.add</text>
+  <text x="73" y="100" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">(</text>
+  <text x="81" y="100" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">"groq/llama-3.1-8b-instant"</text>
+  <text x="285" y="100" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">)    </text>
+  <text x="320" y="100" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#6e7681"># fast, cheap</text>
+</g>
+
+<!-- Line 4: add smart model -->
+<g class="l4">
+  <text x="20" y="120" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#52B788">... </text>
+  <text x="44" y="120" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#d2a8ff">.add</text>
+  <text x="73" y="120" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">(</text>
+  <text x="81" y="120" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">"openai/gpt-4o"</text>
+  <text x="193" y="120" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">) )</text>
+  <text x="220" y="120" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#6e7681">              # powerful</text>
+</g>
+
+<!-- Line 5: simple prompt -->
+<g class="l5">
+  <text x="20" y="148" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#52B788">&gt;&gt;&gt; </text>
+  <text x="56" y="148" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">r1 = router</text>
+  <text x="132" y="148" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#d2a8ff">.complete</text>
+  <text x="189" y="148" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">(</text>
+  <text x="197" y="148" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">"What is the capital of France?"</text>
+  <text x="427" y="148" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">)</text>
+</g>
+
+<!-- Line 6: simple result -->
+<g class="l6">
+  <text x="20" y="168" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#3fb950">→ llama-3.1-8b-instant</text>
+  <text x="192" y="168" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#6e7681">  complexity: </text>
+  <text x="291" y="168" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">0.02</text>
+  <text x="320" y="168" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#6e7681">  cost: </text>
+  <text x="367" y="168" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">$0.000001</text>
+</g>
+
+<!-- Line 7: complex prompt -->
+<g class="l7">
+  <text x="20" y="196" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#52B788">&gt;&gt;&gt; </text>
+  <text x="56" y="196" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">r2 = router</text>
+  <text x="132" y="196" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#d2a8ff">.complete</text>
+  <text x="189" y="196" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">(</text>
+  <text x="197" y="196" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">"Analyze microservices vs monolith trade-offs..."</text>
+  <text x="490" y="196" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#e6edf3">)</text>
+</g>
+
+<!-- Line 8: complex result -->
+<g class="l8">
+  <text x="20" y="216" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#3fb950">→ gpt-4o</text>
+  <text x="95" y="216" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#6e7681">              complexity: </text>
+  <text x="291" y="216" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">0.81</text>
+  <text x="320" y="216" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#6e7681">  cost: </text>
+  <text x="367" y="216" font-family="'Courier New',Courier,monospace" font-size="12.5" fill="#a5d6ff">$0.005</text>
+</g>
+</svg>

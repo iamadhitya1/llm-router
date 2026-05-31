@@ -11,6 +11,10 @@ Stop hardcoding a single model. `llm-router` analyses your prompt's complexity a
 
 Simple prompts → fast cheap models. Complex prompts → powerful models. Automatically.
 
+<div align="center">
+  <img src="./demo.svg" alt="llm-router demo" width="520"/>
+</div>
+
 ---
 
 ## Install
