@@ -19,6 +19,9 @@ Simple prompts → fast cheap models. Complex prompts → powerful models. Autom
 
 ## Install
 
+> **Note:** this repo is called `llm-router` but the PyPI package is `llm-dispatch`.
+> Use `pip install llm-dispatch` — not `pip install llm-router`.
+
 ```bash
 pip install llm-dispatch
 
