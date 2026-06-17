@@ -2,12 +2,18 @@ from setuptools import setup, find_packages
 
 setup(
     name="llm-dispatch",
-    version="1.0.0",
-    author="M Adhitya",
-    description="Route prompts to the right LLM automatically. Supports Groq, OpenAI, Anthropic.",
+    version="1.0.1",
+    author="M. Adhitya",
+    author_email="adhitya5119@gmail.com",
+    description="Route prompts to the right LLM by complexity. Supports Groq, OpenAI, Anthropic. Save cost, keep quality.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/iamadhitya1/llm-router",
+    project_urls={
+        "Homepage": "https://iamadhitya.vercel.app",
+        "Source": "https://github.com/iamadhitya1/llm-router",
+        "Rewrite Labs": "https://rewritelabs.vercel.app",
+    },
     packages=find_packages(),
     install_requires=[],
     extras_require={
@@ -18,7 +24,9 @@ setup(
     },
     python_requires=">=3.9",
     license="MIT",
-    keywords=["llm", "router", "groq", "openai", "anthropic", "ai", "prompt-routing"],
+    keywords=["llm", "router", "groq", "openai", "anthropic", "ai", "prompt-routing",
+              "llm-routing", "model-routing", "cost-optimization", "ai-gateway",
+              "multi-llm", "llm-proxy", "complexity-routing", "llm-dispatch"],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
