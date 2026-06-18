@@ -5,9 +5,9 @@
 [![GitHub](https://img.shields.io/badge/GitHub-iamadhitya1-blue?logo=github)](https://github.com/iamadhitya1)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python)
 
-> Route prompts to the right LLM automatically. Supports Groq, OpenAI, and Anthropic.
+> Route prompts to the right LLM automatically by complexity. Supports Groq, OpenAI, and Anthropic. Cut costs without cutting quality.
 
-Stop hardcoding a single model. `llm-router` analyses your prompt's complexity and routes it to the cheapest model that can handle it — saving cost without sacrificing quality.
+Stop hardcoding a single model. `llm-router` scores your prompt's complexity and routes it to the cheapest model that can handle it.
 
 Simple prompts → fast cheap models. Complex prompts → powerful models. Automatically.
 
@@ -17,10 +17,34 @@ Simple prompts → fast cheap models. Complex prompts → powerful models. Autom
 
 ---
 
-## Install
+> **Package name note:** this repo is `llm-router` but the PyPI package is **`llm-dispatch`**.
+> ```bash
+> pip install llm-dispatch   # ← correct
+> pip install llm-router     # ← does NOT exist on PyPI
+> ```
+> The import is `from llmrouter import LLMRouter`.
 
-> **Note:** this repo is called `llm-router` but the PyPI package is `llm-dispatch`.
-> Use `pip install llm-dispatch` — not `pip install llm-router`.
+---
+
+## When to use this
+
+Use `llm-router` when:
+- You're making **many LLM calls with varying complexity** and want to minimize cost automatically
+- You want to **run simple queries on cheap/fast models** (Groq Llama 8b) and only escalate to GPT-4o or Claude Sonnet when the prompt actually needs it
+- You support **multiple providers** (Groq + OpenAI + Anthropic) and want a single interface
+- You want **per-call cost estimates** logged alongside responses
+
+Not the right fit if you need agents, tool calling, or function execution — this is a routing layer for text completion, not an agent framework.
+
+---
+
+## Why not LiteLLM?
+
+LiteLLM is a unified API layer — it lets you call any model with the same interface, but you still decide which model to use. `llm-router` decides for you based on prompt complexity. The two tools are complementary, not competing: use LiteLLM if you want provider unification with manual model selection; use `llm-router` if you want the model selection to be automatic and cost-aware.
+
+---
+
+## Install
 
 ```bash
 pip install llm-dispatch
@@ -179,7 +203,7 @@ router.add("groq/llama-3.3-70b-versatile", api_key="gsk_...")
 
 ## Author
 
-**[M. Adhitya](https://iamadhitya.vercel.app)** — Founder of [Rewrite Labs](https://rewritelabs.vercel.app), final-year B.Tech Computer Engineering student at IITRAM Ahmedabad. Builds AI products and open source libraries.
+**[M. Adhitya](https://iamadhitya.vercel.app)** — Founder, [Rewrite Labs](https://rewritelabs.vercel.app)
 
 ## License
 
