@@ -203,7 +203,7 @@ router.add("groq/llama-3.3-70b-versatile", api_key="gsk_...")
 
 ## Author
 
-**[M. Adhitya](https://iamadhitya.vercel.app)** — Founder, [Rewrite Labs](https://rewritelabs.vercel.app)
+**[M. Adhitya](https://iamadhitya.vercel.app)** — Builder, [Rewrite Labs](https://rewritelabs.vercel.app) · [Newsletter](https://adhitya.beehiiv.com/)
 
 ## License
 
